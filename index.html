@@ -4,17 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LivePile</title>
+    <title>Air University Project</title>
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,500i,700"
       rel="stylesheet"
     />
-    <script src="sandbox.js"></script>
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <style>
+      *,
+      :after,
+      :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      a,
+      ul {
+        font-family: "Raleway", sans-serif;
+        color: #000;
+      }
+      .header {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+		z-index: 2;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-right: 40px;
+      }
+      li {
+        display: inline-block;
+        margin-right: 60px;
+        position: relative;
+        top: -100px;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      .logo > img {
+        width: 200px;
+      }
+    </style>
   </head>
   <body>
+    <script>
+      window.addEventListener("load", function () {
+        init();
+      });
+      function init() {
+        let toolTimeline = new TimelineMax();
+        let duration = 0.9;
+        toolTimeline.staggerTo(
+          "li",
+          duration,
+          {
+            top: 0,
+            ease: Back.easeOut,
+          },
+          0.1,
+          0.9
+        );
+      }
+    </script>
     <nav class="header">
       <div class="logo">
         <img src="logo.png" alt="Live Pile" />
