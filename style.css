@@ -44,6 +44,7 @@
   background-position: center;
 }
 
+
 .header-title {
   z-index: 2;
   position: absolute;
@@ -81,8 +82,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   z-index: 3;
-  margin-top: 10px;
-  height: 80px;
+  margin-top: 5px;
+  height: 60px;
 }
 ul {
   list-style: none;
@@ -102,7 +103,7 @@ a {
   text-decoration: none;
 }
 .logo > img {
-  width: 200px;
+  width: 150px;
 }
 .score-container {
   box-sizing: border-box;
@@ -123,35 +124,35 @@ a {
 
 @keyframes anime {
   0% {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background: #f0f0f0;
-    box-shadow: 0 0 0 #cccccc, 0 0 0 #000, 10px 10px 10px #cccccc inset,
-      -10px -10px 10px #000 inset;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #fff, 8px 8px 8px #cccccc inset,
+      -8px -8px 8px #fff inset;
   }
 
   25% {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background: #f8f8f8;
-    box-shadow: 10px 10px 10px #cccccc, 10px 10px 10px #000, 0 0 0 #cccccc inset,
-      0 0 0 #000 inset;
+    box-shadow: 8px 8px 8px #cccccc, 8px 8px 8px #fff, 0 0 0 #cccccc inset,
+      0 0 0 #fff inset;
   }
 
   50% {
-    width: 60px;
-    height: 240px;
+    width: 45px;
+    height: 150px;
     background: #f8f8f8;
-    box-shadow: 10px 10px 10px #cccccc, 10px 10px 10px #000, 0 0 0 #cccccc inset,
-      0 0 0 #000 inset;
+    box-shadow: 8px 8px 8px #cccccc, 8px 8px 8px #fff, 0 0 0 #cccccc inset,
+      0 0 0 #fff inset;
   }
 
   100% {
-    width: 480px;
-    height: 240px;
+    width: 360px;
+    height: 150px;
     background: #fafafa;
-    box-shadow: 40px 40px 40px #cccccc, 0 0 0 #000, 0 0 0 #cccccc inset,
-      2px 2px 2px #000 inset;
+    box-shadow: 30px 30px 30px #cccccc, 0 0 0 #fff, 0 0 0 #cccccc inset,
+      2px 2px 2px #fff inset;
   }
 }
 .social-icon > a > svg {
@@ -160,31 +161,38 @@ a {
 }
 .logo {
   background: white;
-  padding-left: 40px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 15px;
   border-radius: 0 20px 20px 0;
-  height: 65px;
+  height: 48px;
   display: flex;
 }
 .social {
   background: white;
-  padding-right: 40px;
-  padding-left: 20px;
+  padding-right: 2px;
+  padding-left: 15px;
   border-radius: 20px 0 0 20px;
   height: 100%;
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 48px;
 }
 .menu-item > a > svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   color: white;
 }
 .social-icon {
   margin-right: 20px;
 }
 .menu-item:hover > a > svg {
+  display: none;
+}
+.menu-item > a > img {
+  display: none;
+}
+.menu-item:hover > a > img {
+  display: block;
   width: 30px;
   height: 30px;
 }
@@ -200,4 +208,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+li.active > a > img {
+  display: block!important;
+  width: 30px;
+  height: 30px;
+}
+li.active > a > svg {
+  display: none!important;
 }
