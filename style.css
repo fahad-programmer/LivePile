@@ -24,7 +24,7 @@
   clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
   z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(messi.jpg);
+    url(messi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,7 @@
   background-color: green;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-      url(ronaldo.jpg);
+    url(ronaldo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,53 +115,43 @@ a {
 
 .box {
   border-radius: 20px;
-  box-shadow: 0 0 0 #cccccc,
-      0 0 0 #000,
-      10px 10px 10px #cccccc inset,
-      -10px -10px 10px #000 inset;
+  box-shadow: 0 0 0 #cccccc, 0 0 0 #000, 10px 10px 10px #cccccc inset,
+    -10px -10px 10px #000 inset;
   animation: anime 3s;
   animation-fill-mode: forwards;
 }
 
 @keyframes anime {
   0% {
-      width: 60px;
-      height: 60px;
-      background: #f0f0f0;
-      box-shadow: 0 0 0 #cccccc,
-          0 0 0 #000,
-          10px 10px 10px #cccccc inset,
-          -10px -10px 10px #000 inset;
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #000, 10px 10px 10px #cccccc inset,
+      -10px -10px 10px #000 inset;
   }
 
   25% {
-      width: 60px;
-      height: 60px;
-      background: #f8f8f8;
-      box-shadow: 10px 10px 10px #cccccc,
-          10px 10px 10px #000,
-          0 0 0 #cccccc inset,
-          0 0 0 #000 inset;
+    width: 60px;
+    height: 60px;
+    background: #f8f8f8;
+    box-shadow: 10px 10px 10px #cccccc, 10px 10px 10px #000, 0 0 0 #cccccc inset,
+      0 0 0 #000 inset;
   }
 
   50% {
-      width: 60px;
-      height: 240px;
-      background: #f8f8f8;
-      box-shadow: 10px 10px 10px #cccccc,
-          10px 10px 10px #000,
-          0 0 0 #cccccc inset,
-          0 0 0 #000 inset;
+    width: 60px;
+    height: 240px;
+    background: #f8f8f8;
+    box-shadow: 10px 10px 10px #cccccc, 10px 10px 10px #000, 0 0 0 #cccccc inset,
+      0 0 0 #000 inset;
   }
 
   100% {
-      width: 480px;
-      height: 240px;
-      background: #fafafa;
-      box-shadow: 40px 40px 40px #cccccc,
-          0 0 0 #000,
-          0 0 0 #cccccc inset,
-          2px 2px 2px #000 inset;
+    width: 480px;
+    height: 240px;
+    background: #fafafa;
+    box-shadow: 40px 40px 40px #cccccc, 0 0 0 #000, 0 0 0 #cccccc inset,
+      2px 2px 2px #000 inset;
   }
 }
 .social-icon > a > svg {
