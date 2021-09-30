@@ -5,61 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air University Project</title>
+    <link rel="stylesheet" href="style.css">
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,500i,700"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <style>
-      *,
-      :after,
-      :before {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-      }
-      h1,
-      h2,
-      h3,
-      p,
-      a,
-      ul {
-        font-family: "Raleway", sans-serif;
-        color: #000;
-      }
-      .header {
-        position: fixed;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 40px;
-		z-index: 2;
-      }
-      ul {
-        list-style: none;
-        text-align: center;
-        padding-right: 40px;
-      }
-      li {
-        display: inline-block;
-        margin-right: 60px;
-        position: relative;
-        top: -100px;
-      }
-      li:last-child {
-        margin-right: 0;
-      }
-      a {
-        text-decoration: none;
-      }
-      .logo > img {
-        width: 200px;
-      }
-    </style>
   </head>
   <body>
     <script>
@@ -86,12 +38,11 @@
         <img src="logo.png" alt="Live Pile" />
       </div>
       <ul class="nav">
-        <li class="nav__item">
+        <li class="nav__item menu-item">
           <a href=""
-            ><span class="iconify" data-icon="icon-park:football"></span
-          ></a>
+            ><span class="iconify" data-icon="bx:bx-football" style="color: white;"></span></a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item menu-item">
           <a href=""
             ><span
               class="iconify"
@@ -99,41 +50,53 @@
             ></span
           ></a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item menu-item">
           <a href=""
             ><span class="iconify" data-icon="cil:american-football"></span
           ></a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item menu-item">
           <a href=""
             ><span class="iconify" data-icon="bx:bx-basketball"></span
           ></a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item menu-item">
           <a href=""><span class="iconify" data-icon="mdi:badminton"></span></a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item menu-item">
           <a href=""
             ><span class="iconify" data-icon="bx:bx-tennis-ball"></span
           ></a>
         </li>
       </ul>
-	  <div class="social">
-		<ul class="nav">
-			<li class="nav__item">
-			  <a href=""
-				><span class="iconify" data-icon="akar-icons:github-fill"></span></a>
-			</li>
-			<li class="nav__item">
-			  <a href=""
-				><span class="iconify" data-icon="akar-icons:facebook-fill"></span></a>
-			</li>
-			<li class="nav__item">
-			  <a href=""
-				><span class="iconify" data-icon="akar-icons:twitter-fill"></span></a>
-			</li>
-		  </ul>
-	  </div>
+      <div class="social">
+        <ul class="nav">
+          <li class="nav__item social-icon">
+            <a href=""
+              ><span class="iconify" data-icon="akar-icons:github-fill"></span
+            ></a>
+          </li>
+          <li class="nav__item social-icon">
+            <a href=""
+              ><span class="iconify" data-icon="akar-icons:facebook-fill"></span
+            ></a>
+          </li>
+          <li class="nav__item social-icon">
+            <a href=""
+              ><span class="iconify" data-icon="akar-icons:twitter-fill"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <div class="hero">
+      <div class="hero-one"></div>
+      <div class="hero-two"></div>
+      <h1 class="header-title">
+          <div class="score-container">
+              <div class="box"></div>
+            </div>
+      </h1>
+  </div>
   </body>
 </html>
