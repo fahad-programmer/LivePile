@@ -1,9 +1,9 @@
 .hero-one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(patrick.jpg);
+    url(images/patrick.jpg);
 }
 
 .hero-two {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(jimi.jpg);
+    url(images/jimi.jpg);
 }

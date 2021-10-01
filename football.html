@@ -23,7 +23,7 @@
         let toolTimeline = new TimelineMax();
         let duration = 0.9;
         toolTimeline.staggerTo(
-          "li",
+          "li.nav__item",
           duration,
           {
             top: 0,
@@ -34,73 +34,124 @@
         );
       }
     </script>
-    <nav class="header">
-      <div class="logo">
-        <img src="logo.png" alt="Live Pile" />
-      </div>
-      <ul class="nav">
-        <li class="nav__item menu-item">
-          <a href="/index.html"
-            ><span class="iconify" data-icon="bx:bx-football"></span
-          ><img src="soccer.png" alt=""></a>
-        </li>
-        <li class="nav__item menu-item">
-          <a href="/cricket.html"
-            ><span
-              class="iconify"
-              data-icon="emojione-monotone:cricket-game"
-            ></span
-          >
-          <img src="cricket.png" alt=""></a>
-        </li>
-        <li class="nav__item menu-item active">
-          <a href="/football.html"
-            ><span class="iconify" data-icon="cil:american-football"></span
-          ><img src="football.png" alt=""></a>
-        </li>
-        <li class="nav__item menu-item">
-          <a href="/basketball.html"
-            ><span class="iconify" data-icon="bx:bx-basketball"></span
-          ><img src="basketball.png" alt=""></a>
-        </li>
-        <li class="nav__item menu-item">
-          <a href="/badminton.html"><span class="iconify" data-icon="mdi:badminton"></span>
-            <img src="badminton.png" alt=""></a>
-        </li>
-        <li class="nav__item menu-item">
-          <a href="/tennis.html"
-            ><span class="iconify" data-icon="bx:bx-tennis-ball"></span
-          ><img src="tennis.png" alt=""></a>
-        </li>
-      </ul>
-      <div class="social">
+    <div class="main-section">
+      <nav class="header">
+        <div class="logo">
+          <a href="/">
+            <img src="images/logo.png" alt="Live Pile" />
+          </a>
+        </div>
         <ul class="nav">
-          <li class="nav__item social-icon">
-            <a href=""
-              ><span class="iconify" data-icon="akar-icons:github-fill"></span
-            ></a>
+          <li class="nav__item menu-item">
+            <a href="/index.html"
+              ><span class="iconify" data-icon="bx:bx-football"></span
+              ><img src="images/soccer.png" alt=""
+            /></a>
           </li>
-          <li class="nav__item social-icon">
-            <a href=""
-              ><span class="iconify" data-icon="akar-icons:facebook-fill"></span
-            ></a>
+          <li class="nav__item menu-item">
+            <a href="/cricket.html"
+              ><span
+                class="iconify"
+                data-icon="emojione-monotone:cricket-game"
+              ></span>
+              <img src="images/cricket.png" alt=""
+            /></a>
           </li>
-          <li class="nav__item social-icon">
-            <a href=""
-              ><span class="iconify" data-icon="akar-icons:twitter-fill"></span
-            ></a>
+          <li class="nav__item menu-item active">
+            <a href="/football.html"
+              ><span class="iconify" data-icon="cil:american-football"></span
+              ><img src="images/football.png" alt=""
+            /></a>
+          </li>
+          <li class="nav__item menu-item">
+            <a href="/basketball.html"
+              ><span class="iconify" data-icon="bx:bx-basketball"></span
+              ><img src="images/basketball.png" alt=""
+            /></a>
+          </li>
+          <li class="nav__item menu-item">
+            <a href="/badminton.html"
+              ><span class="iconify" data-icon="mdi:badminton"></span>
+              <img src="images/badminton.png" alt=""
+            /></a>
+          </li>
+          <li class="nav__item menu-item">
+            <a href="/tennis.html"
+              ><span class="iconify" data-icon="bx:bx-tennis-ball"></span
+              ><img src="images/tennis.png" alt=""
+            /></a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <div class="hero">
-      <div class="hero-one"></div>
-      <div class="hero-two"></div>
-      <h1 class="header-title">
-        <div class="score-container">
-          <div class="box"></div>
+        <div class="social">
+          <ul class="nav">
+            <li class="nav__item social-icon">
+              <a href=""
+                ><span class="iconify" data-icon="akar-icons:github-fill"></span
+              ></a>
+            </li>
+            <li class="nav__item social-icon">
+              <a href=""
+                ><span
+                  class="iconify"
+                  data-icon="akar-icons:facebook-fill"
+                ></span
+              ></a>
+            </li>
+            <li class="nav__item social-icon">
+              <a href=""
+                ><span
+                  class="iconify"
+                  data-icon="akar-icons:twitter-fill"
+                ></span
+              ></a>
+            </li>
+          </ul>
         </div>
-      </h1>
+      </nav>
+      <div class="hero">
+        <div class="hero-one"></div>
+        <div class="hero-two"></div>
+        <h1 class="header-title">
+          <div class="score-container">
+            <div class="box flex">
+              <div class="team flex">
+                <img src="images/fc.png" alt="FC Barcelona" />
+                <span>01</span>
+              </div>
+              <div class="time">21:00</div>
+              <div class="team flex">
+                <span>02</span>
+                <img src="images/madrid.png" alt="Real Madrid" />
+              </div>
+            </div>
+          </div>
+        </h1>
+      </div>
+    </div>
+    <div class="supporter">
+      <ul class="sup-list flex">
+        <li class="sup-title">
+          <h2>Live Scores From:</h2>
+        </li>
+        <li class="sup-item">
+          <img src="images/nfl.jpg" alt="" />
+        </li>
+        <li class="sup-item">
+          <img src="images/afl.jpg" alt="">
+        </li>
+        <li class="sup-item">
+          <img src="images/wfl.png" alt="">
+        </li>
+        <li class="sup-item">
+          <img src="images/cfl.png" alt="">
+        </li>
+        <li class="sup-item">
+          <img src="images/ifaf.jpg" alt="">
+        </li>
+        <li class="sup-item">
+          <img src="images/usfl.png" alt="">
+        </li>
+      </ul>
     </div>
   </body>
 </html>
