@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air University Project</title>
+    <link rel="stylesheet" href="basketball.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,500i,700"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  </head>
+  <body>
+    <script>
+      window.addEventListener("load", function () {
+        init();
+      });
+      function init() {
+        let toolTimeline = new TimelineMax();
+        let duration = 0.9;
+        toolTimeline.staggerTo(
+          "li",
+          duration,
+          {
+            top: 0,
+            ease: Back.easeOut,
+          },
+          0.1,
+          0.9
+        );
+      }
+    </script>
+    <nav class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Live Pile" />
+      </div>
+      <ul class="nav">
+        <li class="nav__item menu-item">
+          <a href="/index.html"
+            ><span class="iconify" data-icon="bx:bx-football"></span
+          ><img src="soccer.png" alt=""></a>
+        </li>
+        <li class="nav__item menu-item">
+          <a href="/cricket.html"
+            ><span
+              class="iconify"
+              data-icon="emojione-monotone:cricket-game"
+            ></span
+          >
+          <img src="cricket.png" alt=""></a>
+        </li>
+        <li class="nav__item menu-item">
+          <a href="/football.html"
+            ><span class="iconify" data-icon="cil:american-football"></span
+          ><img src="football.png" alt=""></a>
+        </li>
+        <li class="nav__item menu-item active">
+          <a href="/basketball.html"
+            ><span class="iconify" data-icon="bx:bx-basketball"></span
+          ><img src="basketball.png" alt=""></a>
+        </li>
+        <li class="nav__item menu-item">
+          <a href="/badminton.html"><span class="iconify" data-icon="mdi:badminton"></span>
+            <img src="badminton.png" alt=""></a>
+        </li>
+        <li class="nav__item menu-item">
+          <a href="/tennis.html"
+            ><span class="iconify" data-icon="bx:bx-tennis-ball"></span
+          ><img src="tennis.png" alt=""></a>
+        </li>
+      </ul>
+      <div class="social">
+        <ul class="nav">
+          <li class="nav__item social-icon">
+            <a href=""
+              ><span class="iconify" data-icon="akar-icons:github-fill"></span
+            ></a>
+          </li>
+          <li class="nav__item social-icon">
+            <a href=""
+              ><span class="iconify" data-icon="akar-icons:facebook-fill"></span
+            ></a>
+          </li>
+          <li class="nav__item social-icon">
+            <a href=""
+              ><span class="iconify" data-icon="akar-icons:twitter-fill"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-one"></div>
+      <div class="hero-two"></div>
+      <h1 class="header-title">
+        <div class="score-container">
+          <div class="box"></div>
+        </div>
+      </h1>
+    </div>
+  </body>
+</html>
