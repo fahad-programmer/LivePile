@@ -22,8 +22,6 @@
   height: 100vh;
   clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(messi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,8 +33,6 @@
   right: 0;
   width: 60%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(ronaldo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -96,7 +92,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 45px;
   position: relative;
 }
 li:last-child {
@@ -105,7 +101,7 @@ li:last-child {
 a {
   text-decoration: none;
 }
-.logo > img {
+.logo > a > img {
   width: 150px;
 }
 .score-container {
@@ -280,7 +276,7 @@ li.sup-item > h1 {
   }
 
   100% {
-    width: 360px;
+    width: 400px;
     height: 150px;
     background: #fafafa;
     box-shadow: 30px 30px 30px #cccccc, 0 0 0 #fff, 0 0 0 #cccccc inset,
@@ -293,7 +289,7 @@ li.sup-item > h1 {
     margin-top: 10px;
     height: 80px;
   }
-  .logo > img {
+  .logo > a > img {
     width: 200px;
   }
   .logo {
