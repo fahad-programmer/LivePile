@@ -7,3 +7,79 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url(images/lee.jpg);
 }
+.hero {
+  text-transform: none!important;
+}
+.team-game {
+  justify-content: space-between!important;
+}
+.team-game > span {
+  font-size: 15px!important;
+  font-weight: 500!important;
+  color: #818181!important;
+}
+.box {
+  padding: 20px!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+span.toss {
+  font-size: 15px!important;
+  font-weight: 100!important;
+}
+.team {
+  align-items:unset!important;
+  animation: team-anime 2s ease-in 1s forwards!important;
+  animation-fill-mode: forwards!important;
+  justify-content: unset!important;
+}
+.team-data {
+  justify-content: space-between!important;
+}
+.team-name {
+  align-items: center;
+}
+.team-name > svg {
+  width: 28px;
+  height: 20px;
+  border: 1px solid #b3b3b3;
+}
+.team-name > img {
+  width: 28px;
+  width: 28px;
+}
+.team-name > p {
+  font-size: 21px;
+  margin-left : 15px;
+}
+.team-score {
+  align-items: center;
+}
+.lose {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #a5a5a5;
+}
+.win {
+   font-size: 22px;
+}
+.team-scor {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-score {
+  width: 20%;
+}
+.team-name {
+  width: 70%;
+}
+@keyframes team-anime{
+  to {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+}

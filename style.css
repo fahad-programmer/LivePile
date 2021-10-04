@@ -234,7 +234,9 @@ li.sup-item > h1 {
   font-weight: 700;
   color: #12193b;
 }
-
+.no-display {
+  display: none;
+}
 @keyframes score-anime {
   to {
     width: 100%;
